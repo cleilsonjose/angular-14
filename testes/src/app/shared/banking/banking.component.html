@@ -1,0 +1,30 @@
+<div>
+  <p>
+    <strong>Olá, Sr.{{ pessoa }}</strong>
+  </p>
+  <p>
+    Ag: 9999, CO: 999999-01
+  </p>
+</div>
+
+<div class="poupanca">
+  <p>
+    Poupança: R$ <span id="get-Poupanca">{{ getPoupanca }}</span>
+  </p>
+  <input id="input-sacar" type="text" #sacar />
+  <button id="sacar" (click)="setSacar(sacar.value)">Sacar</button>
+</div>
+
+<div class="carteira">
+  <p>
+    Carteira: R$ <span id="get-sacar">{{ getCarteira }}</span>
+  </p>
+  <input id="input-depositar" type="text" #depositar />
+  <button id="depositar" (click)="setDepositar(depositar.value)">
+    Depositar
+  </button>
+</div>
+
+<main>
+  <app-list></app-list>
+</main>
