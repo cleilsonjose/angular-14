@@ -1,0 +1,8 @@
+<form #batata="ngForm"><!--#batata templeteref-->
+  Nome:
+  <input type="text" name="Nome" ngModel>
+  <input type="mail" name="Mail" ngModel>
+</form>
+
+
+<h2>{{batata.value | json}}</h2>
